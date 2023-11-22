@@ -1,4 +1,4 @@
-package com.example.demo.trySpring;
+package com.example.demo.trySpring.Hello;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,11 +9,6 @@ public class HelloController {
     @GetMapping("/hello")
     public String home() {
 
-        int cnt = 1;
-        for (int i=0; i<10; i++) {
-            cnt = cnt + cnt;
-            System.out.println(cnt);
-        }
         return "hello";
     }
 }

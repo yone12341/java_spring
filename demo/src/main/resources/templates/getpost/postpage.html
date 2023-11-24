@@ -8,6 +8,7 @@
 <body>
     <h1>postページ</h1>
     <p>postページ</p>
+    <p th:text="${postText}"></p>
     <form th:action="@{/getpost/main}" method="get">
         <input type="submit" value="main">
     </form>

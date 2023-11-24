@@ -9,9 +9,11 @@
     <h1>get post サンプルページ</h1>
     <p>サンプルボタン</p>
     <form th:action="@{/getpost/getpage}" method="get">
+        <input type="text" name="testGet" th:value="${getInitValue}">
         <input type="submit" value="get">
     </form>
     <form th:action="@{/getpost/postpage}" method="post">
+        <input type="text" name="testPost" th:value="${postInitValue}">
         <input type="submit" value="post">
     </form>
 </body>

@@ -1,4 +1,4 @@
-package com.example.demo.trySpring.getpost;
+package com.example.demo.test001.getpost;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

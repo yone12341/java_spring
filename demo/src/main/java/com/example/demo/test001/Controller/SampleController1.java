@@ -1,13 +1,13 @@
-package com.example.demo.Controller;
+package com.example.demo.test001.Controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class Test001Controller {
+public class SampleController1 {
     
-    @GetMapping("/test001")
+    @GetMapping("/sample1")
     public String displayTest001() {
-        return "test001";
+        return "sample1";
     }
 }

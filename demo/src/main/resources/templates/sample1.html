@@ -17,5 +17,14 @@
     
         <button type="submit">送信</button>
     </form>
+    <form action="#" th:action="@{/sample1/restSumbit}" th:object="${userForm}" method="post">
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id" th:value="*{id}" />
+    
+        <label for="username">ユーザー名:</label>
+        <input type="text" id="username" name="username" th:value="*{username}" />
+    
+        <button type="submit">レスト送信</button>
+    </form>
 </body>
 </html>

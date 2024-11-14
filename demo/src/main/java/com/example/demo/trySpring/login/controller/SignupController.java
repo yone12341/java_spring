@@ -17,8 +17,8 @@ public class SignupController {
 
         Map<String, String> radio = new LinkedHashMap<>();
 
-        radio.put("既婚","true");
-        radio.put("未婚","true");
+        radio.put("既婚","checked");
+        radio.put("未婚","false");
 
         return radio;
     }
@@ -36,7 +36,7 @@ public class SignupController {
     @PostMapping("/signup")
     public String postSingUp(Model model) {
 
-        return "redirect/login";
+        return "redirect:/login";
     }
 
 }

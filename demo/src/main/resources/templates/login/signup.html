@@ -61,7 +61,7 @@
                         <div class="form-group">
                             <!-- ポイント：ラジオボタンの実装 -->
                             <div th:each="item : ${radioMarriage}"> <input type="radio" name="radioMarrige"
-                                    th:text="${item.key}" th:value="${item.value}"> </input> </div>
+                                    th:text="${item.key}" th:checked="${item.value}"> </input> </div>
                         </div>
                     </td>
                 </tr>
